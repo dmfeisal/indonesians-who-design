@@ -1,42 +1,41 @@
 # Indonesians Who Design
 
+[Indonesians Who Design](https://indonesianswhodesign.dae.ng) celebrates the work of talented Indonesian designers and showcases it to the world.
 
-
-The website is built using Google Spreedsheet, [Next.js](https://nextjs.org/) and deployed at [Vercel](https://vercel.com/).
+The website uses Google Sheets, Next.js, and Vercel.
 
 ## Forking this project
 
-We encourage you to create your directory featured a list of any professionals you think is relevant. The code is open source, and these instructions will help you running on your local machine to get started.
+We encourage you to create a directory featuring professionals relevant to your community. The project is open source, and these instructions will help you run it locally.
 
 ### Link your spreadsheet
 
-1. Duplicate [this spreadsheet template](https://docs.google.com/spreadsheets/d/12LLA-NoHin0zQfmpEblgMjd260bmriLMowBAH1QDOhI/edit)
-2. Go to File > Publish to the Web > Publish
-3. Copy the id between /spreadsheets/ and /edit in the url: 
-	> [https://docs.google.com/spreadsheets/d/__12LLA-NoHin0zQfmpEblgMjd260bmriLMowBAH1QDOhI__/edit](https://docs.google.com/spreadsheets/d/12LLA-NoHin0zQfmpEblgMjd260bmriLMowBAH1QDOhI/edit)
-4. Paste the ID in the file [`pages/api/designers.js`](https://github.com/zehfernandes/brazilianswhodesign/blob/main/pages/api/designers.js)
+1. Duplicate [this spreadsheet template](https://docs.google.com/spreadsheets/d/12LLA-NoHin0zQfmpEblgMjd260bmriLMowBAH1QDOhI/edit).
+2. Copy the spreadsheet ID between `/spreadsheets/d/` and `/edit` in its URL.
+3. Update the spreadsheet ID and range in `lib/getDesigners.js`.
+4. Configure `GOOGLE_CLIENT_EMAIL` and `GOOGLE_PRIVATE_KEY` in your local environment and deployment settings.
+5. Give the Google service account access to the spreadsheet.
 
-### Install the dependencies
+### Install dependencies
 
-Making sure you're in the correct project folder and install the dependencies:
-
-```
-yarn install
+```bash
+npm install
 ```
 
-### Run the project locally
+### Run locally
 
-To start the development server run:
-
-```
-yarn dev
+```bash
+npm run dev
 ```
 
-In your browser, open `localhost:3000`.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Create a production build
 
-### Deploy at vercel
+```bash
+npm run build
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https%3A%2F%2Fgithub.com%2Fzehfernandes%2Fbrazilianswhodesign)
+### Deploy
 
-
+The production website is deployed on [Vercel](https://vercel.com/) from the `main` branch.
