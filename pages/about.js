@@ -181,7 +181,7 @@ export default function Home({ designers }) {
           <ul>
             <li>
               <a className="link" href="https://twitter.com/daengdoang">
-                Daeng Muhammad Feisal
+                Daeng M. F.
               </a>
             </li>
           </ul>
