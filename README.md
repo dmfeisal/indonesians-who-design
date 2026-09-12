@@ -8,7 +8,7 @@ The website is built using Google Spreedsheet, [Next.js](https://nextjs.org/) an
 
 We encourage you to create your directory featured a list of any professionals you think is relevant. The code is open source, and these instructions will help you running on your local machine to get started.
 
-### Link your spreedsheet
+### Link your spreadsheet
 
 1. Duplicate [this spreedhsheet template](https://docs.google.com/spreadsheets/d/12LLA-NoHin0zQfmpEblgMjd260bmriLMowBAH1QDOhI/edit)
 2. Go to File > Publish to the Web > Publish
